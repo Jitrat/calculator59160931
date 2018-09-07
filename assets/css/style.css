@@ -1,0 +1,37 @@
+body {
+	background-image: url("https://goo.gl/88ptN8");
+	font-family: cursive;
+	text-align: center;
+}
+
+h1	{
+	font-family: cursive;
+	margin-top: 10px;
+	font-size: 65px;
+
+}
+
+input{
+	width: 60px;
+	height: 60px; 
+	font-size: 30px; 
+	border-radius: 10px; 
+	margin-right: 10px;
+	background: #CCFF66;
+}
+
+.header-container {
+	border-bottom: 8px;
+	height: 80px;
+}
+
+.area {
+	width: 360px;
+	height: 520px;
+	background: #FF6600;
+	margin: 25px;
+	margin-right: 250px;
+	margin-left: 498px;
+}
+
+

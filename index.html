@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- Document responsive across devices. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Document's character set. -->
+    <meta charset="UTF-8">
+	<title>Calculator</title>
+	<!-- Linking CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+	<body>
+
+	<div class="header-container">
+		<h1 style="color: black">CALCULATOR</font></h1>
+	</div>
+	
+	<div class="area">
+		<form name="Calculator">
+			<input name="click" placeholder="0" style="width: 280px; height: 55px;text-align: right; font-size: 40px; border-radius: 10px;
+				margin: 20px; margin-left: 12px"/><br>
+			<input type="button" value="7" onClick="Calculator.click.value +='7'">
+			<input type="button" value="8" onClick="Calculator.click.value +='8'"/>
+        	<input type="button" value="9" onClick="Calculator.click.value +='9'"/>
+	    	<input type="button" value="*" onClick="getMult()"/><br>
+        
+         
+        	<input type="button" value="4" onClick="Calculator.click.value +='4'" style="margin: 20px; margin-right: 10px; margin-left: 0px">
+        	<input type="button" value="5" onClick="Calculator.click.value +='5'"/>
+        	<input type="button" value="6" onClick="Calculator.click.value +='6'"/>
+	    	<input type="button" value="-" onclick="getMinus()"/><br>
+
+         
+        	<input type="button" value="1" onClick="Calculator.click.value +='1'" style="margin: 5px; margin-right: 10px; margin-left: 0px">
+        	<input type="button" value="2" onClick="Calculator.click.value +='2'"/>
+        	<input type="button" value="3" onClick="Calculator.click.value +='3'"/>
+        	<input type="button" value="+" onClick="getPlus()" style="margin: 0px; margin-right: 10px"/><br>
+
+
+        	<input type="button" value="0" onClick="Calculator.click.value +='0'" style="margin: 20px; margin-right: 10px; 
+        		margin-left: 0px"/>
+        	<input type="button" value="00" onClick="Calculator.click.value +='00'"/>
+        	<input type="button" value="." onClick="getPoint()"/>   
+        	<input type="button" value="/" onClick="getDiv()"/><br>
+
+        
+        	<input type="button" value="C" onClick="Calculator.click.value = ''" style="width: 140px;height: 60px; font-size: 30px; 
+        	border-radius: 10px; margin: 5px; margin-right: 0px; margin-left: 0px">
+        	<input type="button" value="=" onclick="Calculator.click.value = eval(Calculator.click.value)" style="width: 140px;height: 60px; font-size: 30px; border-radius: 10px">
+    </div>
+        </form>
+
+        <script>
+        	   	
+        	function getMult(){
+        		Calculator.click.value +="*";      		
+        	}
+        	function getMinus(){
+        		Calculator.click.value +="-";    		
+        	}
+        	function getPlus(){
+        		Calculator.click.value +="+";   		
+        	}
+        	function getPoint(){
+        		Calculator.click.value +=".";    		
+        	}
+        	function getDiv(){
+        		Calculator.click.value +="/";		
+        	}
+        	  	
+        </script>
+            	
+	</body>
+</html>
